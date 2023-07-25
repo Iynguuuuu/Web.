@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto' , "sans-serif"; 
+}
+html, body {
+    height: 100%
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image:
+     linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), 
+     url(Musio1/BG11.jpg);
+    background-position: center;
+    background-size: cover;
+   
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height:12% ;
+    display: flex;
+    align-items: center;
+   
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+  
+}
+nav ul li :after{
+    content: "";
+    position:absolute;
+    background-color: goldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;  
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.column{
+    flex-basis: 50%;
+}
+h1{
+    color:white;
+    font-size: 105px;
+    margin-left:60px ;
+    font-family:Georgia,serif;
+    text-shadow: 0 0 15px;
+}
+p{
+    color: white;
+    font-size: 22px;
+    line-height: 17px;
+    margin-left: 70px;
+}
+.genre1{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(Musio1/POP.jpg);
+    background-position: center ;
+    transition: 0.5s;
+}
+.genre1:hover{
+    transform: translateY(-10px); ;
+}
+.genre2{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(Musio1/ROCK11.jpg);
+    background-position: center;
+    transition: 0.5s;
+}
+.genre2:hover{
+    transform: translateY(-10px); ;
+}
+.genre3{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(Musio1/electric2.jpg);
+    background-position: center;
+    transition: 0.5s;
+}
+.genre3:hover{
+    transform: translateY(-10px); ;
+}
+.genre4{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(Musio1/Kpop.jpg);
+    background-position: fill;
+    transition: 0.5s;
+}
+.genre4:hover{
+    transform: translateY(-10px); ;
+}
+.genre1 h5{
+    background-color: black;
+    text-align:center ;
+    margin-top: 140px;
+    color: aqua;
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;    
+}
+.genre2 h5{
+    background-color: black;
+    text-align:center ;
+    margin-top: 140px;
+    color: rgb(244, 4, 4);
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;      
+}
+.genre3 h5{
+    background-color: black;
+    text-align:center ;
+    margin-top: 140px;
+    color:aquamarine;
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;   
+}
+.genre4 h5{
+    background-color: black;
+    text-align:center ;
+    margin-top: 140px;
+    color: rgb(253, 117, 255);
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;   
+}
+.page{
+    background-color: black; 
+    height: 50px
+}
+.page p a{
+    padding-top: 15px;
+    text-decoration: none; 
+    color: white; 
+    background-color: black; 
+    height: 25px; 
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fa {
+    padding: 8px;
+    border-radius: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 15px;
+  }
+  .social{
+    padding-bottom: 20px;
+    float: right;
+    height: 15px;
+    font-size: 23px;
+  }
+.social p{
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 14px ;
+
+}
+.social .fa:hover{
+      opacity: 0.7;
+  }
+.social .fa-facebook{
+    background: #3B5998;
+    color: white;
+  }
+.social .fa-twitter{
+    background: #55ACEE;
+    color: white;
+  }
+.social .fa-google{
+    background: #dd4b39;
+    color: white;
+  }
+.social .fa-instagram{
+    background:  rgb(243, 82, 246);
+    color: white;
+  }
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #716666; 
+}

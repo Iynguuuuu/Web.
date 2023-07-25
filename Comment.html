@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Musio4/logo.jpg">
+    <link rel="stylesheet" href="Comment.css">
+   
+
+</head>
+
+<body>
+ <div class="container">
+   <!--Navigation Bar-->
+    <div class="navbar">
+      <img src="Musio1/logo1.avif" alt="logoimg" class="logo">
+        <nav>
+             <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="code.html">About Us</a></li>
+                <li><a href="cart.html">Shop</a></li>
+                <li><a href="index.html">Quiz</a></li>
+                <li><a href="svg.html">Site Map</a></li>
+                <li><a href="Comment.html">Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <div><h2>Musio</h2></div>
+     <!--Form-->
+    <div class="form-container">
+
+        <h3>Do you like our website?</h3>
+        <div class="container_emojis">
+          <div class="wrapper">
+               <div class="emoji">
+                  <div onclick="alert('Can u tell what disappointed you?')">&#128530;</div>
+                  <div onclick="alert('We will do our best in upcoming days.')">&#128528;</div>
+                  <div onclick="alert('We are are glad that you liked.')">&#128578;</div>
+                  <div onclick="alert('We are glad that you enjoyed.')">&#128515;</div>
+                  <div onclick="alert('Thank you for your love.')">&#128525;</div>
+               </div>
+           </div>
+        </div>  
+    
+        <form action="mailto:iynkaranpavananthan2002@gmail.com" method="post" enctype="text/plain">
+
+            <label for="name">Name</label>
+            <input type="text" name="Name" placeholder="Enter your name" id="name" required>
+            <label for="mail">E-Mail</label>
+            <input type="email" name="E-Mail" placeholder="Enter your mail address" id="mail" required>
+            <label for="phonenumber">To join our whatsapp group</label>
+            <input type="text" name="Phone Number" placeholder="Enter your phone number" id="phonenumber">
+            <label for="comments">&#128071;&#127995; Your Feedback &#128071;&#127995;</label>
+            <textarea name="Comments" id="comments" cols="20" rows="6" 
+            placeholder="Your comments about our website" required></textarea>
+            <br>
+            
+         <button type="submit" id="Sbutton"> Submit </button>
+
+        <div class="popup" id="popup">
+            <img src="Musio1/tick.png" alt="Tick">
+            <h2>Thank You!</h2>
+            <p>Thank you for taking time to give us your feedback
+                on your experience today.</p>
+            <button type="button"  id="Cbutton" > OK </button>
+        </div>
+
+        </form>
+
+        
+    </div>
+    
+    <div class="page"  >
+        <p><a href="Page_Editor.html ">Page Editor &#9997;</a></p> 
+      </div>
+
+ </div>
+       
+  <script src="Comment.js"></script>
+
+</body>
+
+</html>

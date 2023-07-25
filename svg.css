@@ -1,0 +1,228 @@
+/*--------------- Navigation Bar ---------------*/
+.logo {
+	display: block;
+	margin-left: 10px;
+	top: 100px;
+	width: 200px;
+}
+
+.navbar {
+	height: 5%;
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+nav ul li a {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+nav ul li :after {
+	content: "";
+	position: absolute;
+	background-color: goldenrod;
+	height: 3px;
+	width: 0px;
+	left: 0px;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover:after {
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(255, 176, 6);
+	font-size: 90px;
+	letter-spacing: 7px;
+	font-family: georgia, serif;
+	text-shadow: 0 0 10px;
+	height: 30px;
+	margin-top: -10px;
+	
+}
+
+.home {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 319px;
+	right: 600px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+
+.hbar {
+	position: relative;
+	top: 235px;
+}
+
+.Queries {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 1200px;
+}
+
+.buyproduct {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 1000px;
+}
+
+.site {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 800px;
+}
+
+.quiz {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 600px;
+}
+
+.student {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 300px;
+}
+
+.Thumbnail {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 320px;
+	right: 0px;
+}
+
+.rock {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 600px;
+	right: 243px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+
+.k-pop {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 680px;
+	right: 243px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+
+.electric {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 760px;
+	right: 243px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+
+.pop {
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 840px;
+	right: 243px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+
+
+.topic {
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 22px;
+	letter-spacing: 4px;
+	line-height: 32px;
+	position: relative;
+	top: -48px;
+}
+
+.page {
+	border-style: none;
+	stroke-width: 6;
+	stroke: black;
+	fill: rgb(153, 125, 1);
+	stroke: rgb(182, 142, 10);
+	fill-opacity: 0.5;
+}
+
+/*  Lines  */
+.downLine2 {
+	position: absolute;
+	top: 520px;
+	right: 150px;
+	stroke: rgb(182, 142, 10);
+	stroke-width: 3px;
+}
+
+.downMain {
+	position: absolute;
+	stroke: rgb(182, 142, 10);
+	top: 340px;
+	right: 170px;
+	stroke-width: 3px;
+}
+
+.studentname {
+	position: relative;
+	bottom: -630px;
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #716666; 
+}

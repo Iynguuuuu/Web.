@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto' , "sans-serif"; 
+}
+html, body {
+    height: 100%
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image:
+     linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+     url(Musio4/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+   
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height:12% ;
+    display: flex;
+    align-items: center;
+   
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+  
+}
+nav ul li :after{
+    content: "";
+    position:absolute;
+    background-color: goldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;  
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.column{
+    flex-basis: 50%;
+}
+h1{
+    color: aquamarine;
+    font-size: 60px;
+    margin-left:60px ;
+    font-family:Georgia,serif;
+    text-shadow: 0 0 15px;
+}
+p{
+    color: white;
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 70px;
+}
+.genre1{
+    width: 230px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(Musio4/download\ \(1\).jpeg);
+    background-position: center ;
+    transition: 0.5s;
+}
+.genre1:hover{
+    transform: translateY(-10px); ;
+}
+.genre2{
+    width: 420px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 130px 90px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-image: url(Musio4/onedirection.webp);
+    background-position: center;
+    transition: 0.5s;
+}
+.genre2:hover{
+    transform: translateY(-10px); ;
+}
+.genre3{
+    width: 300px;
+    height: 300px;
+  
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: right;
+    margin-right: 200px;
+    background-image: url(Musio4/coldplay.jpg);
+    background-position: center;
+    transition: 0.5s;
+}
+.genre3:hover{
+    transform: translateY(-10px); ;
+}
+
+.genre1 h5{
+    background-color: black;
+    border-radius: 32px;
+    text-align:center ;
+    margin-top: 150px;
+    color: rgb(179, 78, 230);
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;    
+}
+.genre2 h5{
+    background-color: black;
+    border-radius: 32px;
+    text-align:center ;
+    margin-top: 120px;
+    color:rgb(236, 63, 201);
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;      
+}
+.genre3 h5{
+    background-color: black;
+    border-radius: 32px;
+    text-align:center ;
+    margin-top: 220px;
+    color:rgb(40, 194, 250);
+    text-shadow: 0 0 15px;
+    font-style: oblique;
+    font-size: 30px;   
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #716666; 
+}

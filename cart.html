@@ -1,0 +1,347 @@
+
+     
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title>Shop</title>
+		<link rel="stylesheet" type="text/css" href="buyProducts.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="icon" href="Musio4/logo.jpg">
+        
+        <script src="buyProducts.js"></script>
+    </head>
+    
+		<body>
+            <div class="container">
+                
+               <div class="navbar">
+                <img src="Musio2/logo2.jpeg" alt="logoimg" class="logo">
+                
+                    <nav>
+                        <ul>
+                            <li><a href="Homepage.html">Home</a></li>
+                            <li><a href="code.html">About Us</a></li>
+                            <li><a href="cart.html">Shop</a></li>
+                            <li><a href="index.html">Quiz</a></li>
+                            <li><a href="svg.html">Site Map</a></li>
+                            <li><a href="Comment.html">Feedback</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+               </div>
+        <div class="products">
+            <div class="tabs">
+                <button class="btn tablink" onclick="openPage('Guitar', this, 'blue')" id="defaultOpen">Guitars</button>
+                <button class="btn tablink" onclick="openPage('Merchs', this, 'blue')">Merchs</button>
+                <button class="btn tablink" onclick="openPage('Themed', this, 'blue')">Themed</button>
+                <button class="btn tablink" onclick="openPage('other', this, 'blue')">MORE</button>
+
+                <form  name="buyForm" action="payment.html">
+                    <fieldset id="productsTable">
+                        <legend style=" font-size: 60px; color: rgb(255, 176, 6); font-family:Georgia,serif;
+                        text-shadow: 0 0 10px; letter-spacing: 10px;"> Musio </legend>
+                        <!--PRODUCTS-->
+                            <!-- Guitars -->
+                            <div id="Guitar" class="tabcontent">			
+                                <table> 
+                                    <tr> 
+                                        <!--Product 1 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/1.jpg" alt="product 1" width="300" height="300">
+                                                <p>Electric Bass Guitar<br>Brand-Gibson</p>
+                                                <p>&#36; 525</p>                                                                                                                                          
+                                                <label for="quantity1"> Quantity : </label>
+                                                <input type="number" id="quantity1" name="Quantity1" min="0" value="0"> <!-- Input feild for the quantity of Product 1-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button1" onclick="addToCart(1)"> Add To Cart </button> <!--if product 1 is selected calls the addToCart() function and pass the argument "1" to it, and adds the selected item to the shopping cart-->
+                                            </div>
+                                        </td>
+                                        <!--Product 2 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/2.jpg" alt="product 2" width="300" height="300">
+                                                <p>Electro-Acoustic Guitar <br>Brand-Ibanez</p>
+                                                <p>&#36; 255</p>                                                                                              									
+                                                <label for="quantity2"> Quantity: </label>
+                                                <input type="number" id="quantity2" name="Quantity2" min="0" value="0"> <!-- Input feild for the quantity of Product 2-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button2" onclick="addToCart(2)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <!--Product 3 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/3.jpg" alt="product 3" width="300" height="300">
+                                                <p>Stratocaster-Red<br>Brand-Yamaha</p>
+                                                <p>&#36; 600</p>                                                                                            									
+                                                <label for="quantity3"> Quantity: </label>
+                                                <input type="number" id="quantity3" name="Quantity3" min="0" value="0"> <!-- Input feild for the quantity of Product 3-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button3" onclick="addToCart(3)"> Add To Cart </button> 
+                                            </div>
+                                        </td>														
+                                        <!--Product 4 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/4.jpg" alt="product 4" width="300" height="300">
+                                                <p>LA electric Guitar<br>Sunburst</p>
+                                                <p>&#36; 299</p>                                               
+                                                <label for="quantity3"> Quantity: </label>
+                                                <input type="number" id="quantity4" name="Quantity4" min="0" value="0"> <!-- Input feild for the quantity of Product 4-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button4" onclick="addToCart(4)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>			
+                                </table>
+                            </div>
+            				<!-- Shirts -->	
+				            <div id="Merchs" class="tabcontent">
+					            <table>
+						            <tr>
+							            <!--Product 5 -->
+							            <td>
+								            <div class="card"> 
+									            <img src="Musio2/Drake.jpg" alt="product 5" width="300" height="300">
+									            <p>Drake<br> Rare Album T-Shirt</p>
+									            <p>&#36; 15</p>
+									            <label for="Q5"> Size: </label>
+									            <select name="size" id="Q5"> 
+										            <option value="small">S</option>
+										            <option value="medium">M</option>
+										            <option value="large">L</option>
+									            </select>									
+									            <label for="quantity5"> Quantity: </label>
+									            <input type="number" id="quantity5" name="Quantity5" min="0" value="0"> <!-- Input feild for the quantity of Product 5-->
+									            <br><br>
+									            <button type="button" class="btn selected" name="button5" onclick="addToCart(5)"> Add To Cart </button>
+								            </div>
+							            </td>
+                                        <!--Product 6 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/JB.jpg" alt="product 6" width="300" height="300">
+                                                <p>Justin Bieber<br>The Eras Tour Hoodie</p>
+                                                <p>&#36; 25</p>
+                                                <label for="Q6"> Size: </label>
+                                                <select name="size" id="Q6"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity6"> Quantity: </label>
+                                                <input type="number" id="quantity6" name="Quantity6" min="0" value="0"> <!-- Input feild for the quantity of Product 6-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button6" onclick="addToCart(6)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 7 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/Ariana.jpg" alt="product 7" width="300" height="300">
+                                                <p>Ariana Grande<br>Yours Truly T-Shirt</p>
+                                                <p>&#36; 35</p>
+                                                <label for="Q7"> Size: </label>
+                                                <select name="size" id="Q7"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity7"> Quantity: </label>
+                                                <input type="number" id="quantity7" name="Quantity7" min="0" value="0"> <!-- Input feild for the quantity of Product 7-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button7" onclick="addToCart(7)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 8 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/Taylor.jpg" alt="product 8" width="300" height="300">
+                                                <p>Taylor-swift<br>White album hoodie</p>
+                                                <p>&#36; 25</p>
+                                                <label for="Q8"> Size: </label>
+                                                <select name="size" id="Q8"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity8"> Quantity: </label>
+                                                <input type="number" id="quantity8" name="Quantity8" min="0" value="0"> <!-- Input feild for the quantity of Product 8-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button8" onclick="addToCart(8)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>
+                                </table>	
+                            </div>
+                            <!-- albums -->	
+                            <div id="Themed" class="tabcontent">					
+                                <table> 
+                                    <tr> 
+                                        <!--Product 9 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/9.jpeg" alt="product 9" width="300" height="300">
+                                                <p>olivia rodrigo<br>Silk Sonic CD</p>
+                                                <p>&#36; 12</p>
+                                                <label for="quantity10"> Quantity: </label>
+                                                <input type="number" id="quantity9" name="Quantity9" min="0" value="0"> <!-- Input feild for the quantity of Product 9-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button9" onclick="addToCart(9)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 10 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/10.jpeg" alt="product 10" width="300" height="300">
+                                                <p>Keytags<br>Blackpink</p>
+                                                <p>&#36; 3</p>
+                                                <label for="quantity10"> Quantity: </label>
+                                                <input type="number" id="quantity10" name="Quantity10" min="0" value="0"> <!-- Input feild for the quantity of Product 10-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button10" onclick="addToCart(10)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 11 -->
+                                        <td>
+                                            <div class="card">
+                                                <img src="Musio2/11.jpeg" alt="product 11" width="300" height="300">
+                                                <p>Lightstick<br>BTS</p>
+                                                <p>&#36; 18</p>
+                                                <label for="quantity11"> Quantity: </label>
+                                                <input type="number" id="quantity11" name="Quantity11" min="0" value="0"> <!-- Input feild for the quantity of Product 11-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button11" onclick="addToCart(11)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 12 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/12.jpeg" alt="product 12" width="300" height="300">
+                                                <p>Bluetooth Headset<br>SounCore</p>
+                                                <p>&#36; 70</p>
+                                                <label for="quantity12"> Quantity: </label>
+                                                <input type="number" id="quantity12" name="Quantity12" min="0" value="0"> <!-- Input feild for the quantity of Product 12-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button12" onclick="addToCart(12)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>	
+                                </table>
+                            </div>
+                            <!-- other products-->	
+                            <div id="other" class="tabcontent">	
+                                <table>			
+                                    <tr> 
+                                        <!--Product 13 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/5.jpg" alt="product 13" width="300" height="300">
+                                                <p>Microphone<br>Rode</p>
+                                                <p>&#36; 180</p>
+                                                <label for="quantity13"> Quantity: </label>
+                                                <input type="number" id="quantity13" name="Quantity13" min="0" value="0"> <!-- Input feild for the quantity of Product 13-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button13" onclick="addToCart(13)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 14 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/6.jpg" alt="product 14" width="300" height="300">
+                                                <p>Volume mixer<br>Helicon</p>
+                                                <p>&#36; 250</p>
+                                                <label for="quantity14"> Quantity: </label>
+                                                <input type="number" id="quantity14" name="Quantity14" min="0" value="0"> <!-- Input feild for the quantity of Product 14-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button14" onclick="addToCart(14)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 15 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/7.jpg" alt="product 15" width="300" height="300">
+                                                <p>Saxophone<br>Yamaha</p>
+                                                <p>&#36; 449</p>
+                                                <label for="quantity15"> Quantity: </label>
+                                                <input type="number" id="quantity15" name="Quantity15" min="0" value="0"> <!-- Input feild for the quantity of Product 15-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button15" onclick="addToCart(15)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 16 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="Musio2/8.jpg" alt="product 16" width="300" height="300">
+                                                <p>Drumset<br>Sony</p>
+                                                <p>&#36; 899</p>
+                                                <label for="quantity16"> Quantity: </label>
+                                                <input type="number" id="quantity16" name="Quantity16" min="0" value="0"> <!-- Input feild for the quantity of Product 16-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button16" onclick="addToCart(16)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>
+                                </table>
+                            </div>                                                                                    
+                    </fieldset>
+
+                    <!--Space allocation for the automatic bill-->
+                    <fieldset id="autoBill"> 
+                        <legend>CART</legend><br>
+                            <dl id="bill"></dl>
+                            <P> ******************************************************** </p>
+                            <h3>Total Price : $ <span id="totalPrice">0.00</span></h3>					
+                    </fieldset>
+
+                    <div class="submitBtn">
+                        <input type="submit" id="proceed" class="submit" value="Proceed" disabled onclick="checkCart()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            //For the tablinks
+            function openPage(pageName,element,color){
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                element.style.backgroundColor = color;
+            }
+    
+            document.getElementById("defaultOpen").click();
+
+        </script>
+        <script src="page_links.js"></script>
+        <!-- footer section -->
+        <div class="page" style="background-color: black; height: 25px;" >
+            <p><a style="text-decoration: none; color: #ffffff; background-color: black; height: 25px; float: left ; font-size: 24px; padding-top: 10px;"
+                href="Page_Editor2.html">Page Editor &#9997;</a></p> 
+          </div>
+                    
+            <div class="copyright_text">&copy;Musio</div>
+            
+                
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap'); 
+body{
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/*Styling the fieldsets*/
+/*product table*/
+#productsTable {
+    text-align:center;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+#productsTable legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*Automatic bill*/
+#autoBill{
+    margin:50px 300px 50px 300px;
+    text-align: center;
+    font-family:"Playfair Display","Open Sans", "sans-serif";
+}
+#autoBill legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Styling the tabs*/
+.products{
+    margin-top: 80px;
+}
+.tablink {
+    background-color: #badeee;
+    color: rgb(120, 110, 110);
+    float: left;
+    border: 1px solid #000000;
+    outline: none;
+    padding: 25px 20px;
+    font-size: 20px;
+    width: 22%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;  /*The cursor property specifies the mouse cursor to be displayed when pointing over an element*/
+    transition: background-color 0.5s ease;
+    
+  }
+.tablink:hover {
+    background-color: #bad6eb;
+}
+
+/*Styling the input field number*/ 
+input[type=number]{
+	height: 22px;
+	width: 50px;
+	padding-left: 10px;
+	margin-right: 10px;
+	border: 1px solid ;
+}
+
+input[type=number]:focus{ /*removes focus border(outline) around the input number field*/
+	outline: none;
+}
+
+/*Styling the Scrolling list*/
+select{
+	height: 22px;
+	width: 60px;
+	padding-left: 10px;
+	margin-right: 10px;
+	border: 1px solid ;
+}
+select:focus{
+	outline: none;
+}
+
+/*Styling the input field button*/
+.selected{
+    width: 100px;
+	height: 40px;
+	background-color: #436f99;
+	font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    
+}
+.selected:hover{
+    background-color: #ff8f20;
+    color: #000;
+}
+/*Styling the class card*/
+.card{
+	background-image: linear-gradient(#0c6b88, #272559);
+	background-repeat:no-repeat;
+	background-size:cover;
+    margin: 10px 50px 20px 80px; 
+    padding: 20px 105px 20px 105px;
+	text-align: center;
+	transition: transform 0.5s;	
+	box-shadow: 0 0 20px 0px rgba(255, 255, 255,0.1);
+	cursor: pointer;
+    color: white;
+}
+.card:hover{
+	transform: translateY(-5px);
+}
+
+
+/*Styling the Cart*/
+#bill{
+    font-size: 20px;
+}
+#totalPrice{
+    font-size: 20px;
+}
+
+.field_set{
+    margin: 0 300px;
+}
+
+/*Styling the 'Proceed' button*/
+.submit{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 300px 50px 10px;
+    float: right;
+    background-color: #f9cc47;
+    font-weight: 600;
+}
+.submit:hover{
+    background-color: #dec475;
+}

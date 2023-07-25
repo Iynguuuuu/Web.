@@ -1,0 +1,213 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+	<link rel="icon" href="Musio4/logo.jpg">
+	<style>
+		body {
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Musio4/mick-haupt--EoUIP5q2q8-unsplash.jpg);
+			background-attachment: fixed;
+			background-size: cover;
+			text-align: center;
+		}
+
+		.Page_editor {
+			color: black;
+		}
+
+		.selectBox,
+		.selectbox2,
+		.font-size-select {
+			margin-left: 1000px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="navbar">
+		<img src="Musio4/logo.jpg" alt="icon" class="logo">
+		<nav>
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="code.html">About Us</a></li>
+				<li><a href="cart.html">Shop</a></li>
+				<li><a href="index.html">Quiz</a></li>
+				<li><a href="svg.html">Site Map</a></li>
+				<li><a href="Comment.html">Feedback</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<h1><b> Best Songs Of All Time</b></h1>
+	</div>
+	<br><br>
+
+
+
+
+	<div class="gallery">
+		<div class="gallery-item">
+
+			<img class="A" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Musio4/TheWeeknd.webp"
+				alt="Blinding Lights" width="250" height="200">
+
+
+			<div class="description">The Weeknd has been a pop heavyweight since he dropped his coke-fuelled banger
+				‘Can't Feel My Face’ in 2015.
+				But the Canadian superstar took things to another level with ‘Blinding Lights’, a synth-driven monster
+				that somehow managed to brighten
+				up the summer of Covid, blasting out of cars everywhere as people escaped their bubbles. More than a
+				year later, its power has only grown.
+			</div>
+		</div>
+
+		<div class="gallery-item">
+
+			<img class="B" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+				src="Musio4/How-Did-Olivia-Rodrigos-Drivers-License-Make-Her-Famous-1024x576.jpg" alt="Drivers License"
+				width="270" height="200">
+
+
+			<div class="description">Pop's current heir apparent exploded onto the scene with this universally gripping,
+				emotionally ripe tale of teenage
+				yearning: a piano ballad with a forlorn melody, a driving backbeat and some of the most bracing vocals
+				in recent pop. Rodrigo wears her
+				love of Taylor Swift on her sleeve, so much so that fans call her the second coming while haters cry
+				ripoff. For what it’s worth,
+				Swift (unlike Courtney Love) is a fan… and rumours continue to swirl about an upcoming collaboration
+				that could rock the pop world to its core.
+			</div>
+		</div>
+
+		<div class="gallery-item">
+
+			<img class="C" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+				src="Musio4/sorry-cover-art-sticker-ACF062252__74439.jpg" alt="Sorry" width="270" height="200">
+
+			<div class="description">Taking a hiatus from making music to focus on growing up a little, the Biebs came
+				back with ‘Purpose’ in 2015.
+				‘Sorry’, the second single from the album, was mixed by Skrillex — and in a stroke of genius and
+				surprising modesty, he excluded himself
+				from the music video and focused on an oft-imitated squad of dancers instead.
+			</div>
+		</div>
+
+		<div class="gallery-item">
+
+			<img class="D" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Musio4/image(2).png" alt="Levitating"
+				width="270" height="200">
+
+			<div class="description">Dua Lipa’s ‘Future Nostalgia’ album is full of bangers, but none is quite as
+				instantly timeless as this throwback jam
+				that pulses with verve, confidence and pure joy. Once she reaches the punchy ‘yeah yeah yeah’ callback,
+				you'll be soaring with her.
+				Go ahead and skip the DaBaby remix… Dua’s got this one on her own.
+			</div>
+		</div>
+	</div>
+
+
+
+	<br><br>
+
+
+
+	<div class="selectBox">
+		<div class="heading">
+			<h5 id="bc">Select Background Color:</h5>
+		</div>
+		<select id="bgColor" onchange="changeBackgroundColor(this.value)">
+			<option value="">Select background color</option>
+			<option value="##d7f542">Lemon Lime</option>
+			<option value="#856011">Dark Brown</option>
+			<option value="#ff7403">Vivid Orange</option>
+			<option value="#a61165">Deep Magenta</option>
+			<option value="#ab0ddb">Purple Blue</option>
+		</select>
+	</div>
+
+
+	<div class="selectbox2">
+		<div class="heading">
+			<h5 id="fc">Select the Font Colour:</h5>
+		</div>
+		<select id="fccolor" onchange="backgroundDrop()">
+			<option class="font" value=""> Select font color</option>
+			<option class="font" value="black">Black</option>
+			<option class="font" value="red">Red</option>
+			<option class="font" value="#048a16">Forest Green</option>
+			<option class="font" value="#0b03ff">Bright Blue</option>
+		</select>
+	</div>
+
+	<div class="font-size-select">
+		<div class="heading">
+			<h5 id="fs">Select the Font Size:</h5>
+		</div>
+
+		<select id="fontSize" onchange="changeFontSize(this.value)">
+			<option value=""> Select font size</option>
+			<option value="14">Small</option>
+			<option value="18">Medium</option>
+			<option value="22">Large</option>
+		</select>
+	</div>
+
+
+	<script>
+
+		function changeBackgroundColor(color) {
+			var descriptions = document.querySelectorAll(".description");
+			for (var i = 0; i < descriptions.length; i++) {
+				descriptions[i].style.backgroundColor = color;
+			}
+		}
+
+		function backgroundDrop() {
+			var selectedtxtColor = document.getElementById("fccolor").value;
+			var contentItems = document.querySelectorAll(".gallery-item");
+			for (var i = 0; i < contentItems.length; i++) {
+				contentItems[i].style.color = selectedtxtColor;
+			}
+		}
+		function changeFontSize(size) {
+			var descriptions = document.querySelectorAll(".description");
+			for (var i = 0; i < descriptions.length; i++) {
+				descriptions[i].style.fontSize = size + "px";
+			}
+		}
+
+		function bigImg(x) {
+			x.style.height = "300px";
+			x.style.width = "350px";
+
+		}
+
+		function normalImg(x) {
+			x.style.height = "200px";
+			x.style.width = "270px";
+
+
+		}
+
+	</script>
+	<br><br><br><br><br><br>
+
+	<br><br>
+
+	<br><br>
+
+
+	<br><br>
+	<div class="studentname" style="background-color: black; height: 25px;">
+		<p><a style="text-decoration: none; color: #ffffff; background-color: black; height: 20px; float: left; font-size: 20px; font-family: 'Courier New', Courier, monospace; " href="Page_Editor4.html">Page Editor &#9997;</a></p>
+	</div>
+</body>
+
+</html>
